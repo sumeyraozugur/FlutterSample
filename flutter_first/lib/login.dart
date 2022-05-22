@@ -85,12 +85,28 @@ class LoginPageState extends State<LoginPage> {
                   onPressed: () {},
                   child: Text('Looks like a RaisedButton'),
                 ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    primary: Colors.blue,
-                  ),
-                  onPressed: () {},
-                  child: const Text('Login'),
+                // ignore: prefer_const_constructors
+                Divider(
+                  color: Colors.black,
+                  height: 20,
+                  thickness: 2,
+                  indent: 50,
+                  endIndent: 50,
+                ),
+                Row(
+                  children: [
+                    const Text(
+                      "Do you have an account?",
+                      textAlign: TextAlign.center,
+                    ),
+                    TextButton(
+                      style: TextButton.styleFrom(
+                        primary: Colors.blue,
+                      ),
+                      onPressed: () {},
+                      child: const Text('Login'),
+                    ),
+                  ],
                 ),
               ],
             ),
