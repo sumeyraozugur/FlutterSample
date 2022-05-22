@@ -42,9 +42,14 @@ class LoginPageState extends State<LoginPage> {
                         Icons.email,
                       ),
                       SizedBox(width: 10),
-                      Text(
-                        'sumeyra@gmail.com',
-                        style: TextStyle(color: Colors.black26, fontSize: 20.0),
+                      Expanded(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: 'sumeyra@gmail.com',
+                            hintStyle: TextStyle(
+                                color: Colors.black26, fontSize: 20.0),
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -64,9 +69,14 @@ class LoginPageState extends State<LoginPage> {
                         Icons.phone,
                       ),
                       SizedBox(width: 10),
-                      Text(
-                        '05556203478',
-                        style: TextStyle(color: Colors.black26, fontSize: 20.0),
+                      Expanded(
+                        child: TextField(
+                          decoration: InputDecoration(
+                            hintText: 'sumeyra@gmail.com',
+                            hintStyle: TextStyle(
+                                color: Colors.black26, fontSize: 20.0),
+                          ),
+                        ),
                       ),
                     ],
                   ),
