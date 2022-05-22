@@ -71,6 +71,17 @@ class LoginPageState extends State<LoginPage> {
                     ],
                   ),
                 ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Looks like a RaisedButton'),
+                ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    primary: Colors.blue,
+                  ),
+                  onPressed: () {},
+                  child: const Text('Login'),
+                ),
               ],
             ),
           ),
