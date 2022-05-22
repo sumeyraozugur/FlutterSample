@@ -20,16 +20,17 @@ class LoginPageState extends State<LoginPage> {
                 const CircleAvatar(
                   radius: 70.0,
                   backgroundColor: Colors.pink,
-                  backgroundImage: AssetImage('assets/images/1.png'),
+                  backgroundImage: AssetImage('assets/images/pizza.png'),
                 ),
                 Text(
-                  'Cook Recognize',
+                  'Pizza Dünyası',
                   style: TextStyle(
                     fontFamily: 'Cookie',
-                    fontSize: 40,
+                    fontSize: 28,
                     color: Colors.pink[400],
                   ),
                 ),
+                const SizedBox(height: 10),
                 Container(
                   margin: const EdgeInsets.symmetric(
                     horizontal: 40,
@@ -66,13 +67,14 @@ class LoginPageState extends State<LoginPage> {
                   child: Row(
                     children: const <Widget>[
                       Icon(
-                        Icons.phone,
+                        Icons.password,
                       ),
                       SizedBox(width: 10),
                       Expanded(
                         child: TextField(
+                          keyboardType: TextInputType.number,
                           decoration: InputDecoration(
-                            hintText: 'sumeyra@gmail.com',
+                            hintText: '123456',
                             hintStyle: TextStyle(
                                 color: Colors.black26, fontSize: 20.0),
                           ),
@@ -83,7 +85,8 @@ class LoginPageState extends State<LoginPage> {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('Looks like a RaisedButton'),
+                  child: Text('LOGIN'),
+                  style: ElevatedButton.styleFrom(primary: Colors.pink),
                 ),
                 // ignore: prefer_const_constructors
                 Divider(
@@ -94,6 +97,7 @@ class LoginPageState extends State<LoginPage> {
                   endIndent: 50,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
                       "Do you have an account?",
@@ -101,10 +105,15 @@ class LoginPageState extends State<LoginPage> {
                     ),
                     TextButton(
                       style: TextButton.styleFrom(
-                        primary: Colors.blue,
+                        primary: Colors.pink,
                       ),
-                      onPressed: () {},
-                      child: const Text('Login'),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => RegisterPage()));
+                      },
+                      child: const Text('Sign Up'),
                     ),
                   ],
                 ),
