@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class RegisterPage extends StatefulWidget {
+class HomePage extends StatefulWidget {
   @override
-  RegisterPageState createState() => RegisterPageState();
+  HomePageState createState() => HomePageState();
 }
 
-class RegisterPageState extends State<RegisterPage> {
+class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
